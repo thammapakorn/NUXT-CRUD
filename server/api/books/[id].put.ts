@@ -28,10 +28,10 @@ export default defineEventHandler(async (event) => {
     });
   }
 
-  // อัปเดตข้อมูลใน MongoDB
+  // อัปเดตข้อมูล Book ใน MongoDB
   try{
     await BookModel.findByIdAndUpdate(id, body);
-    return { message: "Author Updated"};
+    return { message: "Book Updated"};
   }
     catch (e) {
     const error = e as Error;
