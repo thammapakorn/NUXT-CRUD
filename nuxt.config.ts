@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 
   // server config variable
   runtimeConfig:{
-    MONGO_URI: process.env.MONGO_URI
+    MONGO_URI: "mongodb://localhost:27017/nuxt3-crud"
   },
 
   // register nitro plugin
