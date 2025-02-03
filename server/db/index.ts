@@ -6,7 +6,7 @@ import type { Nitro } from "nitropack";
 export default async (_nitroApp: Nitro) => {
   //run your connect code here
   const config = useRuntimeConfig();
-  console.log(config.MONGO_URI)
+  //console.log(config.MONGO_URI)
   // connect to mongodb
   mongoose
     .connect(config.MONGO_URI)
